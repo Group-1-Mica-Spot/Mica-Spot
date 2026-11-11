@@ -52,8 +52,8 @@ body {
 }
 
 .frame {
-  width: 82%;
-  max-width: 1500px;
+  width: 80%;
+  max-width: none;
   min-height: 88vh;
   height: auto;
   box-sizing: border-box;
@@ -121,7 +121,7 @@ body {
 }
 
 .brand-title h1 span {
-    color: #6e2424;
+    color: #5B50B5;
 }
 
 .title-decoration {
@@ -140,7 +140,7 @@ body {
 }
 
 .title-decoration i {
-    color: #C58A35;
+    color: black;
     font-size: 20px;
     font-style: normal;
 }
@@ -173,7 +173,7 @@ input[type=radio] {
   justify-content: center;
   padding: 12px;
   text-align: center;
-  color: black;
+  color: white;
   font-weight: bold;
   background: var(--red);
   border-radius: 13px;
@@ -181,27 +181,21 @@ input[type=radio] {
   height: 48px;
   font-size: 20px;
   margin: 0;
-  transition: 0.3s;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .tabs label:hover {
   background: white;
+  color: var(--red);
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(139, 58, 58, 0.2);
 }
 
 #user:checked ~ .tabs label[for="user"],
 #owner:checked ~ .tabs label[for="owner"] {
-  background: var(--red);
-  color: var(--cream);
+  background: maroon;
+  color: white;
   font-weight: bold;
-}
-
-#user:checked ~ .tabs label[for="user"]::before,
-#owner:checked ~ .tabs label[for="owner"]::before {
-  content: "- ";
-}
-#user:checked ~ .tabs label[for="user"]::after,
-#owner:checked ~ .tabs label[for="owner"]::after {
-  content: " -";
 }
 
 .form {
@@ -434,7 +428,7 @@ input[type=tel], select, textarea {
 
 @media (max-width: 400px) {
     .frame {
-        width: 98%;
+        width: 96%;
         min-height: 100vh;
         height: auto;
         border-radius: 22px;
